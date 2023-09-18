@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsDrop</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/RemixIcon/icons/Communication/message-fill.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+   <!-- Header -->
+   <header class="header" id="header">
+       <nav class="navbar container">
+           <a href="/html/index.html">
+                <h2 class="logo">NewsDrop</h2>
+           </a>
+           <div class="menu" id="menu">
+               <ul class="list">
+                   <li class="list-item">
+                       <a href="#" class="list-link current">Home</a>
+                   </li>
+                   <li class="list-item">
+                       <a href="#news" class="list-link">News</a>
+                   </li>
+                   <li class="list-item">
+                       <a href="#categories" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                       <a href="#reviews" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#old-posts" class="list-link">Old Posts</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="/html/register.html" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="/html/register.html" class="list-link">Sign In</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden ">
+                        <a href="/html/register.html" class="list-link">Sign Up</a>
+                    </li>
+
+               </ul>
+           </div>
+           <div class="list list-right">
+               <button class="btn place-items-center" id="theme-toggle-btn">
+                  <i class="ri-sun-line sun-icon"></i> 
+                  <i class="ri-moon-line moon-icon"></i> 
+               </button>
+
+               <button class="btn place-items-center" id="search-icon">
+                <i class="ri-search-line"></i> 
+               </button>
+
+               <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                <i class="ri-menu-3-line open-menu-icon"></i>
+                <i class="ri-close-line close-menu-icon"></i>  
+               </button>
+
+               <a href="/html/register.html" class="list-link screen-sm-hidden">Sign In</a>
+               <a href="/html/register.html" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
+                   <span>Sign Up</span>
+               </a>
+
+           </div>
+
+       </nav>
+   </header>
+
+   <!-- Search -->
+   <div class="search-form-container container" id="search-form-container">
+       <div class="form-container-inner">
+           <form action="" class="form">
+               <input type="text" class="form-input" placeholder="What are you looking for?">
+               <button class="btn form-btn" type="submit">
+                   <i class="ri-search-line"></i>
+               </button>
+           </form>
+           <span class="form-note">Or press ESC to close.</span>
+       </div>
+       <button class="btn form-close-btn place-items-center" id="form-close-btn">
+           <i class="ri-close-line"></i>
+       </button>
+   </div>
+
+   <!-- Featured Articles -->
+   <section class="featured-articles section-header-offset">
+       <div class="featured-articles-container container d-grid">
+           <div class="featured-content d-grid">
+               <div class="headline-banner">
+                   <h3 class="headline fancy-border">
+                       <span class="place-items-center">Breaking News</span>
+                   </h3>
+                   <span class="headline-description">Apple announces a new partnership...</span>
+               </div>
+               <a href="/html/post1.html" class="article featured-article featured-article-1">
+                    <img src="/images/VR.jpg" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Aug 4 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3 class="title article-title">Is VR the future?</h3>
+                    </div>
+               </a>
+               <a href="/html/#post.html" class="article featured-article featured-article-2">
+                <img src="/images/1.jpg" alt="" class="article-image">
+                <span class="article-category">Travel</span>
+                <div class="article-data-container">
+                    <div class="article-data">
+                        <span>Aug 4 2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>10 min read</span>
+                    </div>
+                    <h3 class="title article-title">Land Rover Defender</h3>
+                </div>
+                </a>
+                <a href="/html/Basketball/fiba.html" class="article featured-article featured-article-3">
+                    <img src="" alt="" class="article-image">
+                    <span class="article-category">Basketball</span>
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Aug 4 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="title article-title">Germany FIBA World Cup Champions!</h3>
+                    </div>
+               </a>
+           </div>
+           <!-- sidebar -->
+           <div class="sidebar d-grid" id="news">
+               <h3 class="title featured-content-title">Latest News</h3>
+               <a href="/html/post3.html" class="trending-news-box">
+                   <div class="trending-news-image-box">
+                       <span class="trending-number place-items-center">01</span>
+                       <img src="/images/who-s-denilo.jpg" alt="" class="article-image">
+                   </div>
+                   <div class="trending-news-data">
+                    <div class="article-data">
+                        <span>Aug 4 2023</span>
+                        <span class="article-data-spacer"></span>
+                        <span>6 min read</span>
+                    </div>
+                    <h3 class="title article-title">Community Shield</h3>   
+                   </div>
+               </a>
+
+               <a href="/html/post2.html" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">02</span>
+                    <img src="/images/jokic mvp.jpg" alt="" class="article-image">
+                </div>
+                <div class="trending-news-data">
+                 <div class="article-data">
+                     <span>July 15th 2023</span>
+                     <span class="article-data-spacer"></span>
+                     <span>7 min read</span>
+                 </div>
+                 <h3 class="title article-title">The Joker Delivers!</h3>   
+                </div>
+            </a>
+
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">03</span>
+                    <img src="/images/camon.jpg" alt="" class="article-image">
+                </div>
+                <div class="trending-news-data">
+                 <div class="article-data">
+                     <span>Aug 4 2023</span>
+                     <span class="article-data-spacer"></span>
+                     <span>7 min read</span>
+                 </div>
+                 <h3 class="title article-title">Tecno Camon 20 Review</h3>   
+                </div>
+            </a>
+
+            <a href="post2.html" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">04</span>
+                    <img src="/images/nuggets.jpg" alt="" class="article-image">
+                </div>
+                <div class="trending-news-data">
+                 <div class="article-data">
+                     <span>Aug 4 2023</span>
+                     <span class="article-data-spacer"></span>
+                     <span>7 min read</span>
+                 </div>
+                 <h3 class="title article-title">2023 NBA CHAMPIONS Denver Nuggets!</h3>   
+                </div>
+            </a>
+
+            <a href="#" class="trending-news-box">
+                <div class="trending-news-image-box">
+                    <span class="trending-number place-items-center">05</span>
+                    <img src="/images/Vince Carter.png" alt="" class="article-image">
+                </div>
+                <div class="trending-news-data">
+                 <div class="article-data">
+                     <span>Aug 4 2023</span>
+                     <span class="article-data-spacer"></span>
+                     <span>7 min read</span>
+                 </div>
+                 <h3 class="title article-title">USA Return with no Medal</h3>   
+                </div>
+            </a>
+           </div>
+       </div>
+   </section>
+
+   <!-- Older Posts -->
+
+   <section class="older-posts section" id="old-posts">
+       <div class="container">
+           <h2 class="title section-title" data-name="Older posts">Older Posts</h2>
+           <div class="older-posts-grid-wrapper d-grid">
+               <a href="#" class="article d-grid">
+                   <div class="older-posts-article-image-wrapper">
+                       <img src="/images/1.jpg" alt="" class="article-image">
+                   </div>
+
+                   <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Aug 4 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 min red</span>
+                        </div>
+                        <h3 class="title article-title">4X4 OFROAD</h3>
+                        <p class="article-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dignissimos nulla non est voluptate ea laborum aspernatur neque nesciunt magnam 
+                            voluptatibus repudiandae velit deleniti sapiente, fuga facere reiciendis dolores molestiae vero.
+                        </p>
+                    </div>
+               </a>
+
+               <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="/images/edgar-chaparro.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Aug 4 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 min red</span>
+                        </div>
+                        <h3 class="title article-title">Bodyweight Training</h3>
+                        <p class="article-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nulla non est voluptate ea laborum aspernatur neque nesciunt magnam voluptatibus repudiandae velit deleniti sapiente, fuga facere reiciendis dolores molestiae vero.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="/images/Trenches.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Aug 4 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 min red</span>
+                        </div>
+                        <h3 class="title article-title">Celtics Offseason</h3>
+                        <p class="article-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dignissimos nulla non est voluptate ea laborum aspernatur neque nesciunt magnam 
+                            voluptatibus repudiandae velit deleniti sapiente, fuga facere reiciendis dolores molestiae vero.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="/images/logan-weaver.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Aug 4 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 min red</span>
+                        </div>
+                        <h3 class="title article-title">Weight Lifting</h3>
+                        <p class="article-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dignissimos nulla non est voluptate ea laborum aspernatur neque 
+                            nesciunt magnam voluptatibus repudiandae velit deleniti sapiente, 
+                            fuga facere reiciendis dolores molestiae vero.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="/images/boondocks.PNG" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Aug 4 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 min red</span>
+                        </div>
+                        <h3 class="title article-title">Movie Review</h3>
+                        <p class="article-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nulla non est voluptate ea laborum aspernatur neque nesciunt magnam voluptatibus repudiandae velit deleniti sapiente, fuga facere reiciendis dolores molestiae vero.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="/images/clement.jpg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>Aug 4 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 min red</span>
+                        </div>
+                        <h3 class="title article-title">MTB Experience</h3>
+                        <p class="article-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nulla non est voluptate ea laborum aspernatur neque nesciunt magnam voluptatibus repudiandae velit deleniti sapiente, fuga facere reiciendis dolores molestiae vero.
+                        </p>
+                    </div>
+                </a>
+           </div>
+           <div class="see-more-container">
+               <a href="#" class="btn see-more-btn place-items-center">See More
+                   <i class="ri-arrow-right-s-line"></i>
+               </a>
+           </div>
+       </div>
+   </section>
+
+   <!-- Categories -->
+   <section class="popular-tags section" id="categories">
+       <div class="container">
+        <h2 class="title section-title" data-name="Categories">Categories</h2>
+
+        <div class="popular-tags-container d-grid">
+            <a href="/html/travel.html" class="article">
+                <span class="tag-name">#Travel</span>
+                <img src="/images/1.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="/html/tech.html" class="article">
+                <span class="tag-name">#Technology</span>
+                <img src="/images/VR.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="/html/basketball.html" class="article">
+                <span class="tag-name">#Basketball</span>
+                <img src="/images/basketball michael jordan chicago bulls.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="/html/movies.html" class="article">
+                <span class="tag-name">#Movies</span>
+                <img src="/images/jakob-owens.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="/html/football.html" class="article">
+                <span class="tag-name">#Football</span>
+                <img src="/images/braden-hopkins.jpg" alt="" class="article-image">
+            </a>
+
+            <a href="/html/fitness.html" class="article">
+                <span class="tag-name">#Fitness</span>
+                <img src="/images/logan-weaver.jpg" alt="" class="article-image">
+            </a>
+
+        </div>
+       </div>
+   </section>
+
+   <!-- Reviews -->
+   <section class="quick-read section" id="reviews">
+    <div class="container">
+        <h2 class="title section-title" data-name="Reviews">Reviews</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <a href="#" class="article swiper-slide">
+                    <img src="/images/project.jpg" alt="" class="article-image">
+                    <div class="article-data-container">
+                     <div class="article-data">
+                         <span>Aug 4 2023</span>
+                         <span class="article-data-spacer"></span>
+                         <span>7 min red</span>
+                     </div>
+                     <h3 class="title article-title">Is VR the future</h3>
+                 </div>
+                </a>
+
+                <a href="#" class="article swiper-slide">
+                 <img src="/images/2.jpg" alt="" class="article-image">
+                 <div class="article-data-container">
+                  <div class="article-data">
+                      <span>Aug 4 2023</span>
+                      <span class="article-data-spacer"></span>
+                      <span>7 min red</span>
+                  </div>
+                  <h3 class="title article-title">Is VR the future</h3>
+              </div>
+                </a>
+             
+                 <a href="#" class="article swiper-slide">
+                     <img src="/images/3" alt="" class="article-image">
+                     <div class="article-data-container">
+                     <div class="article-data">
+                         <span>Aug 4 2023</span>
+                         <span class="article-data-spacer"></span>
+                         <span>7 min red</span>
+                     </div>
+                     <h3 class="title article-title">Is VR the future</h3>
+                     </div>
+                 </a>
+             
+                 <a href="#" class="article swiper-slide">
+                     <img src="/images/4" alt="" class="article-image">
+                     <div class="article-data-container">
+                     <div class="article-data">
+                         <span>Aug 4 2023</span>
+                         <span class="article-data-spacer"></span>
+                         <span>7 min red</span>
+                     </div>
+                     <h3 class="title article-title">Is VR the future</h3>
+                     </div>
+                 </a>
+
+                 <a href="#" class="article swiper-slide">
+                     <img src="/images/5" alt="" class="article-image">
+                     <div class="article-data-container">
+                     <div class="article-data">
+                         <span>Aug 4 2023</span>
+                         <span class="article-data-spacer"></span>
+                         <span>7 min red</span>
+                     </div>
+                     <h3 class="title article-title">Is VR the future</h3>
+                     </div>
+                 </a>
+
+                 <a href="#" class="article swiper-slide">
+                     <img src="/images/6" alt="" class="article-image">
+                     <div class="article-data-container">
+                     <div class="article-data">
+                         <span>Aug 4 2023</span>
+                         <span class="article-data-spacer"></span>
+                         <span>7 min red</span>
+                     </div>
+                     <h3 class="title article-title">Is VR the future</h3>
+                     </div>
+                 </a>
+            </div>
+
+            <div class="swiper-button-prev swiper-controls"></div>
+            <div class="swiper-button-next swiper-controls"></div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+   </section>
+  
+   <!-- News Letter -->
+
+   <section class="newsletter section">
+       <div class="container">
+           <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+           <div class="form-container-inner">
+
+               <h6 class="title newsletter-title">Subscribe to NewsDrop</h6>
+               <p class="newsletter-description">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Sunt blanditiis quia vitae accusamus et alias voluptas, incidunt velit necessitatibus eligendi praesentium iste consectetur illo similique enim quam, a laudantium saepe!
+               </p>
+
+               <form action="" class="form">
+                   <input type="text" class="form-input" placeholder="Enter your email address">
+                   <button class="btn form-btn" type="submit">
+                       <i class="ri-mail-send-line"></i>
+                   </button>
+               </form>
+
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer section">
+       <div class="footer-container container d-grid">
+           <div class="company-data">
+                <a href="/html/index.html">
+                    <h2 class="logo">NewsDrop</h2>
+                </a>
+                <p class="company-description">
+                    Get the Latest News on the go. All in one blog post for all the latest news and events updates.
+                </p>
+
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="#" class="list-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                            <i class="ri-pinterest-line"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <span class="copyright-notice">&copy; 2023 NewsDrop. All rights reserved.</span>
+           </div>
+           <div>
+               <h6 class="title footer-title">Categories</h6>
+               <ul class="list footer-list">
+                   <li class="list-item">
+                       <a href="/html/travel.html" class="list-link">Travel</a>
+                   </li>
+                   <li class="list-item">
+                       <a href="/html/tech.html" class="list-link">Technology</a>
+                   </li>
+                   <li class="list-item">
+                        <a href="/html/basketball.html" class="list-link">Basketball</a>
+                   </li>
+                   <li class="list-item">
+                        <a href="/html/movies.html" class="list-link">Movies</a>
+                   </li>
+                   <li class="list-item">
+                        <a href="/html/football.html" class="list-link">Football</a>
+                   </li>
+                   <li class="list-item">
+                        <a href="/html/fitness.html" class="list-link">Fitness</a>
+                   </li>
+               </ul>
+           </div>
+
+           <div>
+            <h6 class="title footer-title">Company</h6>
+            <ul class="list footer-list">
+                <li class="list-item">
+                    <a href="#" class="list-link">Travel</a>
+                </li>
+                <!-- link to portfolio website -->
+                <li class="list-item">
+                    <a href="#" class="list-link">Technology</a>
+                </li>
+                <!-- Link to Wizards Basketball Site -->
+                <li class="list-item">
+                     <a href="#" class="list-link">Basketball</a>
+                </li>
+                <li class="list-item">
+                     <a href="#" class="list-link">Movies</a>
+                </li>
+                <li class="list-item">
+                     <a href="#" class="list-link">Football</a>
+                </li>
+                <li class="list-item">
+                     <a href="#" class="list-link">Fitness</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Replace with download call actions playstore-->
+        <div>
+            <h6 class="title footer-title">Download App</h6>
+            <div class="footer-logo">
+                <!-- Link to google playstore through paid add -->
+                <img src="/images/play-store.png" alt="" class="footer-image">
+                <p class="footer-image-description">Available on Google Playstore</p>
+                <img src="/images/app-store.png" alt="" class="footer-image">
+                <p class="footer-image-description">Coming Soon to Appstore</p>
+            </div>
+            
+        </div>
+       </div>
+   </footer>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+    
+
+</html>
